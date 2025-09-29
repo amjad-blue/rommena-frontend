@@ -107,7 +107,12 @@ button {transition: .4s}
 
 
 .nav-header > ul.list-items {display: flex;align-items: center;gap: var(--spacer-5);}
-.submenu.list-items {position: absolute;right: 0;transform: scaleY(0);opacity: 0;pointer-events: none;}
+.submenu.list-items {transition: .3s;position: absolute;right: 0;transform: scaleY(0);opacity: 0;pointer-events: none;transform-origin: top;min-width: 200px;background: transparent;display: flex;flex-direction: column;gap: 6px;margin-top: 5px;}
+.nav-header > ul.list-items > .list-item:is(:hover,.active, :active) .submenu {transform: scaleY(1);opacity: 1;pointer-events: all;}
+.nav-header > ul.list-items > .list-item:is(:hover,.active, :active) .submenu a {display: block;text-align: center;background: var(--primary-color);padding-block: 7px;font-size: var(--font-size-body-sm);color: white;}
+.nav-header > ul.list-items > .list-item:has(.submenu) > a:after {content: "";border: solid black;border-width: 0 2px 2px 0;display: inline-block;padding: 3px;transform: rotate(45deg);transform-origin: 5px 6px;transition: .4s;}
+.nav-header > ul.list-items > .list-item:has(.submenu) a {display: flex;align-items: center;gap: 6px;}
+.nav-header > ul.list-items > .list-item:has(.submenu):hover > a:after {border-color: var(--primary-color);transform: rotate(225deg);}
 .list-item:has(.submenu) {position: relative;}
 .header-bottom__links {display: flex;align-items: center;gap: var(--spacer-4);}
 .header-bottom {display: flex;align-items: center;justify-content: space-between;padding-block: 10px;}
