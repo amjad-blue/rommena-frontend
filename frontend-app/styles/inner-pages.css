@@ -11,9 +11,7 @@ body.inner-page {
 .section-social {padding-top: 115px;padding-bottom: 40px;}
 .section-social .main-social-list .social-item a:hover {border-color: var(--gray-light);}
 
-.rich-text-container, .body-text {color: var(--gray-dark);font-size: var(--font-size-body-sm);line-height: 1.8}
-.rich-text-container > * + * {margin-top: 8px;font-size: clamp(1rem,4vw,1.5rem);}
-.rich-text-container :is(ul,ol) {list-style: revert;padding-inline-start: 20px;}
+
 .pagination {display: flex;align-items: center;gap: 12px;justify-content: center;margin-top: 30px;}
 .pagination-item a{box-shadow: var(--shadow-card);color: var(--primary-color);background: white;width: 35px;aspect-ratio: 1;display: flex;align-items: center;justify-content: center;}
 
@@ -246,10 +244,4 @@ body:has(.search-results-section) .js-pager__items li:not(.navigation).active {f
 
 
 
-/* Scroll to Top Button */
-.scroll-to-top {position: fixed;bottom: 30px;left: 30px;width: 50px;height: 50px;background-color: var(--primary-color);color: white;border: none;border-radius: 50%;cursor: pointer;display: flex;align-items: center;justify-content: center;z-index: 1000;opacity: 0;visibility: hidden;transition: all 0.3s ease;box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);}
-.scroll-to-top.visible {opacity: 1;visibility: visible;}
-.scroll-to-top:hover {background-color: var(--un-blue);transform: translateY(-3px);box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);}
-.scroll-to-top:active {transform: translateY(-1px);}
-.scroll-to-top .icon-arrow-top {font-size: 20px;color: white;}
-html[dir="rtl"] .scroll-to-top {left: auto;right: 30px;}
+

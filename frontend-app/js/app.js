@@ -163,7 +163,7 @@ function handleAlbumSwiper() {
 function handleScrollToTop() {
 	// Check if page height is more than 2000px
 	const pageHeight = document.documentElement.scrollHeight;
-	if (pageHeight <= 2000) {
+	if (pageHeight <= 2500) {
 		return; // Don't add button if page is not tall enough
 	}
 
