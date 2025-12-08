@@ -10,6 +10,18 @@ function init() {
 	handleFAQAccordion()
 	handleHRBodiesSidebarScroll()
 	handleFixedHeader()
+	handleActiveLink()
+}
+
+// function for active link in header based in url
+function handleActiveLink() {
+	const url = window.location.href;
+	const headerLinks = document.querySelectorAll('.list-items a');
+	headerLinks.forEach(link => {
+		if (link.href === url) {
+			link.classList.add('active');
+		}
+	});
 }
 
 

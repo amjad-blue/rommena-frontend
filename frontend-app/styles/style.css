@@ -137,7 +137,10 @@ button {transition: .4s;}
 .nav-header > ul.list-items > .list-item:is(:hover,.active, :active) {color: var(--primary-color);}
 .social-list > li > a {width: 30px;aspect-ratio: 1;display: flex;align-items: center;justify-content: center;background: hsl(204 100% 92% / 1);color: var(--primary-color);}
 .search {width: 30px;aspect-ratio: 1;display: flex;align-items: center;justify-content: center;background: hsl(204 100% 92% / 1);color: var(--primary-color);}
-
+.nav-header > ul.list-items > .list-item:has(.active) {color: var(--primary-color);}
+.nav-header > ul.list-items > .list-item:is(:hover,.active, :active) .submenu a.active {background: hsl(204 100% 47% / 1);color: white;}
+.nav-header > ul.list-items > .list-item:has(.submenu) a.active:after {border-color: var(--primary-color);transform: rotate(225deg);}
+.nav-header > ul.list-items > .list-item:has(.active) > a:after {border-color: var(--primary-color);}
 
 
 
