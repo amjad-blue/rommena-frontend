@@ -201,7 +201,7 @@ button {transition: .4s;}
 .scroll-to-top:hover {background-color: var(--un-blue);transform: translateY(-3px);box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);}
 .scroll-to-top:active {transform: translateY(-1px);}
 .scroll-to-top .icon-arrow-top {font-size: 20px;color: white;}
-html[dir="rtl"] .scroll-to-top {left: auto;right: 30px;}
+html[dir="ltr"] .scroll-to-top {left: auto;right: 30px;}
 
 .rich-text-container, .body-text {color: var(--gray-dark);font-size: var(--font-size-body-sm);line-height: 1.8}
 .rich-text-container > * + * {margin-top: 8px;font-size: clamp(1rem,4vw,1.5rem);}
