@@ -1,0 +1,15 @@
+html[dir="ltr"] :is(.icon-arrow-left, .icon-arrow-right) {transform: scaleX(-1)}
+html[dir="ltr"] .blogs-section :is(.icon-arrow-right2, .icon-arrow-left2) {transform: scaleX(-1)}
+
+
+
+
+
+
+
+
+
+
+
+
+

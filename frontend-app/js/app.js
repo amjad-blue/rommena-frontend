@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', init)
-
+document.querySelector("html").setAttribute("dir", "ltr")
 
 function init() {
 	handleHomePage()
@@ -26,10 +26,14 @@ function handleActiveLink() {
 
 
 function handleHomePage() {
+	const headerHeight = document.querySelector('.header').offsetHeight ;
+	const navItemsHeight = document.querySelector('.header-bottom').offsetHeight ;
+	document.documentElement.style.setProperty('--headerHeight', `${headerHeight}px`);
+	document.documentElement.style.setProperty('--navItemsHeight', `${navItemsHeight}px`);
+
+
 	if (document.querySelector('.homepage')) {
 
-		const headerHeight = document.querySelector('.header').offsetHeight ;
-		document.documentElement.style.setProperty('--headerHeight', `${headerHeight}px`);
 
 		// add hero swiper
 		const heroSwiper = new Swiper(".hero-swiper", {
@@ -58,7 +62,12 @@ function handleHomePage() {
 			navigation: {
 				nextEl: ".swiper-button-next",
 				prevEl: ".swiper-button-prev"
-			}
+			},
+			autoplay: {
+				delay: 4000,           // time between slides (ms)
+				disableOnInteraction: false, // keep autoplay after manual swipe
+				pauseOnMouseEnter: true,     // optional: pause on hover
+			},
 		});
 
 
