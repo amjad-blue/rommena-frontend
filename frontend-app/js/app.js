@@ -1,5 +1,4 @@
 document.addEventListener('DOMContentLoaded', init)
-document.querySelector("html").setAttribute("dir", "ltr")
 
 function init() {
 	handleHomePage()
