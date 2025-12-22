@@ -233,12 +233,12 @@ html[dir="ltr"] .scroll-to-top {left: auto;right: 30px;}
 .statements-speeches-section .card > a {padding: var(--padding-card);border-top: 4px solid var(--primary-color);display: block;min-height: 130px;}
 .statements-speeches-section .card-date {color: var(--gray-light);font-size: var(--font-size-body-sm);}
 .statements-speeches-section .card-title {font-weight: 500;}
-.statements-speeches-section .reports-inner {display: flex;align-items: center;justify-content: space-between;width: 100%;}
+.statements-speeches-section .reports-inner {display: flex;align-items: center;justify-content: space-between;gap: 20px;width: 100%;}
 .statements-speeches-section .reports-wrapper {display: flex;align-items: center;justify-content: center;padding: var(--padding-card);min-height: 200px;position: relative;margin-top: 20px;background: var(--primary-color);color: white;}
 .statements-speeches-section .reports-wrapper:before {content: "";position: absolute;right: 0;top: 0;bottom: 0;background-image: url("../assets/images/bg-info.png");background-position: center;background-repeat: no-repeat;background-size: cover;width: 230px;}
 .statements-speeches-section .reports-wrapper:after {content: "";position: absolute;left: 0;right: 0;top: 0;bottom: 0;background-image: url("../assets/images/bg2-info.png");background-position: left;background-repeat: no-repeat;background-size: 70%;}
 .statements-speeches-section .reports-title {z-index: 1;}
-.statements-speeches-section .reports-link {z-index: 1;}
+.statements-speeches-section .reports-link {z-index: 1;flex-shrink: 0}
 
 
 
