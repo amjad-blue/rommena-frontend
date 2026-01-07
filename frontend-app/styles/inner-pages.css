@@ -9,8 +9,8 @@ body.inner-page {
 .section-social .section-social-inner {display: flex;align-items: center;gap: var(--spacer-3);}
 .section-social .section-social-inner .subtitle {color: black;}
 .section-social {padding-top: 115px;padding-bottom: 40px;}
-.section-social .main-social-list .social-item a:hover {border-color: var(--gray-light);}
-
+.section-social .main-social-list .social-item a:hover {background: var(--primary-color);border-color: var(--primary-color);}
+.section-social .main-social-list .social-item a:hover > span {color: white;}
 
 .pagination {display: flex;align-items: center;gap: 12px;justify-content: center;margin-top: 30px;}
 .pagination-item a{box-shadow: var(--shadow-card);color: var(--primary-color);background: white;width: 35px;aspect-ratio: 1;display: flex;align-items: center;justify-content: center;}
